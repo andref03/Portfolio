@@ -1,0 +1,6 @@
+https://color.adobe.com/create/color-wheel?color-palette=0A779C%2C075C78%2C053C4F%2C0FB9F2%2C0C9AC9&color-palette-name=My+Color+Theme
+#0A779C
+#075C78
+#053C4F
+#0FB9F2
+#0C9AC9
