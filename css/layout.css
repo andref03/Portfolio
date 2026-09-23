@@ -122,6 +122,9 @@
   padding-top: calc(var(--header-height) + 64px);
   padding-bottom: 72px;
   background-image: var(--bg-hero);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   min-height: calc(100vh - var(--header-height));
   display: flex;
