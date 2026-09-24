@@ -452,10 +452,10 @@
 
 /* preview composto (MediaHub com notebook + smartphone) */
 .project-card__preview--composite {
-  min-height: 300px;
-  padding: 24px 16px 16px;
+  min-height: 280px;
+  padding: 24px 16px 20px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   position: relative;
 }

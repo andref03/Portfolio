@@ -133,4 +133,63 @@
   .hero__bottom-bar {
     margin-top: 32px;
   }
+
+  /* Portfólio em mobile */
+  .project-card {
+    padding: 22px 18px;
+  }
+
+  .project-card__preview {
+    min-height: auto;
+    padding: 16px;
+    margin-bottom: 18px;
+  }
+
+  .project-card__preview--composite {
+    min-height: auto;
+    padding: 18px 12px 14px;
+    align-items: center;
+  }
+
+  .project-card__img-laptop {
+    width: 82%;
+    max-width: none;
+  }
+
+  .project-card__img-phone {
+    width: 30%;
+    max-width: none;
+    margin-left: -12%;
+    margin-bottom: 0;
+  }
+}
+
+/* Telas menores (até 480px / 425px) */
+@media (max-width: 480px) {
+  .project-card {
+    padding: 18px 14px;
+  }
+
+  .project-card__preview {
+    min-height: auto;
+    padding: 12px 8px;
+  }
+
+  .project-card__preview--composite {
+    min-height: auto;
+    padding: 14px 6px 12px;
+  }
+
+  .project-card__img-laptop {
+    width: 84%;
+  }
+
+  .project-card__img-phone {
+    width: 32%;
+    margin-left: -14%;
+  }
+
+  .project-card__title {
+    font-size: 1.2rem;
+  }
 }
