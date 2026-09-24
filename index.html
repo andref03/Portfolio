@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>André Felipe | Desenvolvedor de Software</title>
+    <meta
+      name="description"
+      content="Portfólio de desenvolvimento de sistemas web, aplicações desktop e mobile."
+    />
+
+    <!-- fontes (Google): Inter e Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- estilos modulares -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <!-- script de inicialização rápida de Tema -->
+    <script src="js/theme.js"></script>
+  </head>
+  <body>
+    <!-- CABEÇALHO FIXO -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- logotipo ícone de código -->
+        <a href="#hero" class="header__brand" aria-label="Voltar ao início">
+          <span class="header__logo-icon">&lt;/&gt;</span>
+          <span class="header__brand-name">André Felipe</span>
+        </a>
+
+        <!-- menu de navegação -->
+        <nav id="main-nav" class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#sobre" class="nav__link">Sobre</a>
+            </li>
+            <li class="nav__item">
+              <a href="#servicos" class="nav__link">Serviços</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Projetos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contato" class="nav__link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ações cabeçalho -->
+        <div class="header__actions">
+          <!-- alternador de tema -->
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Alternar modo de tema"
+          >
+            <!-- lua (modo escuro ativo) -->
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--moon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- sol (modo claro ativo) -->
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--sun"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- botão menu mobile -->
+          <button
+            id="menu-toggle"
+            class="mobile-menu-btn"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <!-- HERO (apresentação) -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero__grid">
+            <div class="hero__intro">
+              <span class="hero__tag">DESENVOLVEDOR FREELANCER</span>
+
+              <h1 class="hero__title">
+                Ideias que ganham
+                <span class="text-gradient">vida digital.</span>
+              </h1>
+
+              <p class="hero__subtitle">
+                Desenvolvo sistemas web, aplicações desktop e aplicativos mobile
+                para transformar desafios reais em soluções simples, eficientes
+                e bonitas.
+              </p>
+
+              <div class="hero__ctas">
+                <a href="#portfolio" class="btn btn--primary">
+                  Conheça meu trabalho
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+
+                <a href="#contato" class="btn btn--secondary">
+                  Vamos conversar
+                </a>
+              </div>
+
+              <!-- métricas -->
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-item__number">2+</span>
+                  <span class="stat-item__label">anos de experiência</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-item__number">14</span>
+                  <span class="stat-item__label">projetos entregues</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-item__number">10</span>
+                  <span class="stat-item__label">clientes satisfeitos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- janela com objeto JS -->
+            <div class="hero__visual">
+              <div class="code-window">
+                <div class="code-window__header">
+                  <div class="code-window__dots">
+                    <span class="code-window__dot code-window__dot--red"></span>
+                    <span
+                      class="code-window__dot code-window__dot--yellow"
+                    ></span>
+                    <span
+                      class="code-window__dot code-window__dot--green"
+                    ></span>
+                  </div>
+                  <span class="code-window__title">dev.js</span>
+                </div>
+                <div class="code-window__body">
+                  <pre><code><span class="token-kw">const</span> <span class="token-var">solution</span> <span class="token-punct">=</span> {
+  <span class="token-prop">idea</span>: <span class="token-str">'transformadora'</span>,
+  <span class="token-prop">design</span>: <span class="token-str">'intuitivo'</span>,
+  <span class="token-prop">technology</span>: <span class="token-str">'eficiente'</span>
+};
+
+<span class="token-comment">// pronto para o próximo desafio</span></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- status -->
+          <div class="hero__bottom-bar">
+            <div class="status-badge">
+              <span class="status-badge__dot"></span>
+              <span>Disponível para novos projetos</span>
+            </div>
+
+            <!-- indicador do scroll -->
+            <a
+              href="#sobre"
+              class="scroll-indicator"
+              aria-label="Rolar para a próxima seção"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div id="sobre"></div>
+      <div id="servicos"></div>
+      <div id="portfolio"></div>
+      <div id="contato"></div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
