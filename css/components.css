@@ -420,21 +420,86 @@
 }
 
 .project-card__preview {
-  background-color: rgba(6, 18, 25, 0.85);
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(15, 185, 242, 0.08) 0%,
+      transparent 70%
+    ),
+    rgba(6, 18, 25, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: 24px;
   position: relative;
-  min-height: 220px;
+  min-height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px;
 }
 
 [data-theme="light"] .project-card__preview {
-  background-color: #f1f5f9;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(10, 119, 156, 0.06) 0%,
+      transparent 70%
+    ),
+    #f8fafc;
   border-color: #e2e8f0;
+}
+
+/* preview composto (MediaHub com notebook + smartphone) */
+.project-card__preview--composite {
+  min-height: 300px;
+  padding: 24px 16px 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.project-card__img-laptop {
+  width: 78%;
+  max-width: 440px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.45));
+  transition: transform var(--transition-normal);
+}
+
+.project-card__img-phone {
+  width: 28%;
+  max-width: 145px;
+  height: auto;
+  object-fit: contain;
+  margin-left: -10%;
+  margin-bottom: -6px;
+  z-index: 2;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.55));
+  transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-card__img-laptop {
+  transform: scale(1.02);
+}
+
+.project-card:hover .project-card__img-phone {
+  transform: scale(1.06) translateY(-4px);
+}
+
+/* imgs individuais para SAGE e módulo do Cajuí */
+.project-card__img {
+  width: 100%;
+  max-height: 210px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.35));
+  transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-card__img {
+  transform: scale(1.03);
 }
 
 .project-card__info {

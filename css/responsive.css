@@ -20,6 +20,26 @@
   .hero-stats {
     gap: 28px;
   }
+
+  /* transiçõs em smartphones/tablets */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-card--wide {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
 }
 
 /* Telas Pequenas e Smartphones */
