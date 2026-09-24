@@ -119,14 +119,14 @@
 
 /* SEÇÃO HERO */
 .hero {
-  padding-top: calc(var(--header-height) + 64px);
-  padding-bottom: 72px;
+  padding-top: calc(var(--header-height) + 40px);
+  padding-bottom: 56px;
   background-image: var(--bg-hero);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   position: relative;
-  min-height: calc(100vh - var(--header-height));
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,6 +156,11 @@
   color: var(--text-main);
   letter-spacing: -0.03em;
   margin-bottom: 22px;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .hero__title {
+  text-shadow: none;
 }
 
 .hero__subtitle {
