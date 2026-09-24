@@ -207,7 +207,7 @@
 
 .about__image-frame img {
   width: 100%;
-  height: 380px;
+  height: 555px;
   object-fit: cover;
   transition: transform var(--transition-normal);
 }
