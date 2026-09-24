@@ -60,6 +60,7 @@
   --color-btn-primary-bg: linear-gradient(135deg, #0a779c 0%, #0fb9f2 100%);
   --color-btn-primary-hover: linear-gradient(135deg, #0c9ac9 0%, #38c8f8 100%);
   --color-btn-text: #ffffff;
+  --border-btn-secondary: rgba(15, 185, 242, 0.45);
 
   --header-bg: rgba(7, 14, 20, 0.8);
   --header-border: rgba(15, 185, 242, 0.12);
@@ -150,6 +151,7 @@
   --color-btn-primary-bg: linear-gradient(135deg, #0a779c 0%, #075c78 100%);
   --color-btn-primary-hover: linear-gradient(135deg, #0c9ac9 0%, #0a779c 100%);
   --color-btn-text: #ffffff;
+  --border-btn-secondary: rgba(10, 119, 156, 0.48);
 
   --header-bg: rgba(255, 255, 255, 0.85);
   --header-border: rgba(10, 119, 156, 0.12);
