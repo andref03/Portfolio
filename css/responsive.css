@@ -200,6 +200,10 @@
 
   .process-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
+  }
+
+  .process-step {
+    padding: 22px 18px;
   }
 }
