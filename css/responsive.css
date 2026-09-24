@@ -45,6 +45,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
   }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 /* Telas Pequenas e Smartphones */
