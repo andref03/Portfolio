@@ -182,6 +182,11 @@
 
 /* Telas menores (até 480px / 425px) */
 @media (max-width: 480px) {
+  .about__media::before {
+    top: 12px;
+    left: -10px;
+  }
+
   .project-card {
     padding: 18px 14px;
   }
