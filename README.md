@@ -1,6 +1,6 @@
 # Portfólio Front-End | André Felipe
 
-Landing page responsiva desenvolvida como projeto acadêmico de portfólio profissional, utilizando **HTML5 semântico**, **CSS3 modular com metodologia BEM e variáveis nativas**, **JavaScript Vanilla** e práticas de **acessibilidade (a11y)**.
+Landing page responsiva desenvolvida como projeto acadêmico de portfólio profissional, utilizando **HTML5 semântico**, **CSS3 modular com metodologia BEM e variáveis nativas**, **JavaScript Vanilla** e práticas de **acessibilidade**.
 
 > **Acesse o projeto online:** [https://andref03.github.io/Portfolio/](https://andref03.github.io/Portfolio/)
 
@@ -42,8 +42,8 @@ Landing page responsiva desenvolvida como projeto acadêmico de portfólio profi
 
 - **Alternância de Tema (Dark/Light):** Detecção automática da preferência do sistema e persistência da escolha com `localStorage`.
 - **Layout Responsivo:** Adaptação completa para desktop, tablet e smartphones via Media Queries.
-- **Navegação Acessível:** Menu mobile com fechamento por tecla `Esc` e atributos ARIA para leitores de tela.
-- **Identidade Visual Própria:** Paleta em tons de azul e petróleo com efeitos de _glassmorphism_ e bordas decorativas.
+- **Navegação Acessível:** Menu mobile e atributos ARIA para leitores de tela.
+- **Identidade Visual Própria:** Paleta em tons de azul e petróleo com bordas decorativas.
 
 ---
 
@@ -56,7 +56,7 @@ Portfolio/
 ├── index.html          # Marcação semântica da página
 ├── css/
 │   ├── variables.css   # Cores da paleta, tipografia e transições
-│   ├── base.css        # Reset, tipografia global e utilitários (.container, .section)
+│   ├── base.css        # Reset, tipografia global e utilitários
 │   ├── layout.css      # Header fixo, Hero, seções e rodapé
 │   ├── components.css  # Botões, cards, badges e mockups
 │   └── responsive.css  # Breakpoints para celular e tablet
@@ -72,8 +72,8 @@ Portfolio/
 
 ## Escolhas Técnicas
 
-- **HTML5 Semântico:** Uso de tags estruturais (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) em vez de divisões genéricas com `<div>`.
-- **Metodologia BEM:** Classes previsíveis sem conflito de especificidade (ex: `.service-card__title`, `.service-card--featured`).
+- **HTML5 Semântico:** Uso de tags estruturais (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+- **Metodologia BEM:** Classes previsíveis sem conflito de especificidade.
 - **Variáveis CSS Nativas:** Controle centralizado de temas diretamente no `:root` e `[data-theme="light"]`.
 - **Vanilla JS:** Zero bibliotecas ou dependências pesadas, garantindo carregamento rápido e funcionamento offline.
 
